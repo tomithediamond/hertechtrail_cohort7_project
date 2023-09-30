@@ -1,9 +1,15 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4294e3;
-    --secondary: rgb(66, 6, 6);
-    --light: #f0f6ff;
-    --dark: #262b47;
+    --primary: rgb(136, 30, 30);
+    --secondary: black;
+    --light: green;
+    --dark: grey;
+}
+body{
+    /*background-image: url(../img/bg-img.png);*/
+    background-color: rgba(6, 41, 6, 0.827);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*** Spinner ***/
@@ -462,7 +468,10 @@ h6,
         var(--primary)
     );
 }
-
+.motivational{
+    background-color: gray;
+    border-radius: 20px;
+}
 /*** Footer ***/
 .footer {
     margin-top: 6rem;
@@ -472,6 +481,7 @@ h6,
         linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-position: left 0px bottom 0px, right 0px top 50%, center top;
     background-repeat: no-repeat;
+    opacity: 0.8;
 }
 
 .footer .btn.btn-social {
@@ -481,7 +491,7 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
+    color: var(--secondary);
     border: 1px solid rgba(256, 256, 256, 0.1);
     border-radius: 40px;
     transition: 0.3s;
