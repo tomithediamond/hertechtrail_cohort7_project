@@ -2,12 +2,12 @@
 :root {
     --primary: rgb(136, 30, 30);
     --secondary: black;
-    --light: green;
-    --dark: grey;
+    --light: gray;
+    --dark: green;
 }
 body{
     /*background-image: url(../img/bg-img.png);*/
-    background-color: rgba(6, 41, 6, 0.827);
+    background-color: peachpuff;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,6 +24,10 @@ body{
     transition: opacity 0.5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
+}
+
+.row.g-5{
+    padding-bottom: 150px;
 }
 
 /*** Heading ***/
@@ -471,6 +475,8 @@ h6,
 .motivational{
     background-color: gray;
     border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 /*** Footer ***/
 .footer {
@@ -481,7 +487,7 @@ h6,
         linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-position: left 0px bottom 0px, right 0px top 50%, center top;
     background-repeat: no-repeat;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 .footer .btn.btn-social {
