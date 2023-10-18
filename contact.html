@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Contat Tomi</title>
+        <title>Contact Tomi</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="" name="keywords" />
         <meta content="" name="description" />
 
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon" />
+        <link href="img/me-3.png" rel="icon" />
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,10 +63,10 @@
             <!-- Navbar & Hero Start -->
             <div class="container-xxl position-relative p-0" id="home">
                 <nav
-                    class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+                    class="navbar navbar-expand-lg navbar-light bg-primary-gradient px-4 px-lg-5 py-3 py-lg-0"
                 >
                     <a href="" class="navbar-brand p-0">
-                        <h1 class="m-0">FitApp</h1>
+                        <h1 class="m-0">Hi there!</h1>
                         <!-- <img src="img/logo.png" alt="Logo"> -->
                     </a>
                     <button
@@ -103,26 +103,23 @@
             <!-- Contact Start -->
             <div class="container-xxl py-5" id="contact">
                 <div class="container py-5 px-lg-5">
-                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="text-center wow fadeInRight" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium mt-5">
-                            Contact Us
+                            CONTACT ME
                         </h5>
-                        <h1 class="mb-5">Get In Touch!</h1>
+                        <h1 class="mb-5">I'd love to hear from you!</h1>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-lg-9">
                             <div class="wow fadeInUp" data-wow-delay="0.3s">
-                                <p class="text-center mb-4">
-                                    The contact form is currently inactive. Get
-                                    a functional and working contact form with
-                                    Ajax & PHP in a few minutes. Just copy and
-                                    paste the files, add a little code and
-                                    you're done.
-                                    <a href="https://htmlcodex.com/contact-form"
-                                        >Download Now</a
-                                    >.
+                                <p class="text-center mb-4 wow fadeInLeft">
+                                    Looking to hire or collaborate with a  Front-end 
+                                    Web Developer who's got a flare for creativity and innovation? 
+                                    Well, hey! I'm just a form away. 
+                                    I am open to collaborations that will be beneficial
+                                    to you and me. 
                                 </p>
-                                <form>
+                                <form name="feedbackForm" id="feedbackForm" method="post" action="https://postmail.invotes.com/send">
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <div class="form-floating">
@@ -130,7 +127,8 @@
                                                     type="text"
                                                     class="form-control"
                                                     id="name"
-                                                    placeholder="Your Name"
+                                                    placeholder="Your Name" 
+                                                    required
                                                 />
                                                 <label for="name"
                                                     >Your Name</label
@@ -143,7 +141,8 @@
                                                     type="email"
                                                     class="form-control"
                                                     id="email"
-                                                    placeholder="Your Email"
+                                                    placeholder="Your Email" 
+                                                    required
                                                 />
                                                 <label for="email"
                                                     >Your Email</label
@@ -156,7 +155,8 @@
                                                     type="text"
                                                     class="form-control"
                                                     id="subject"
-                                                    placeholder="Subject"
+                                                    placeholder="Subject" 
+                                                    required
                                                 />
                                                 <label for="subject"
                                                     >Subject</label
@@ -170,6 +170,7 @@
                                                     placeholder="Leave a message here"
                                                     id="message"
                                                     style="height: 150px"
+                                                    required
                                                 ></textarea>
                                                 <label for="message"
                                                     >Message</label
@@ -194,82 +195,77 @@
             <!-- Contact End -->
             <!-- Footer Start -->
             <div
-                class="container-fluid bg-primary text-light footer wow fadeIn"
-                data-wow-delay="0.1s"
-            >
-                <div class="container py-5 px-lg-5">
-                    <div class="row g-5">
-                        <div class="col-md-12 col-lg-12">
-                            <h4 class="text-white mb-4">Address</h4>
-                            <div class="d-flex gap-4">
-                                <p>
-                                    <i class="fa fa-map-marker-alt me-3"></i>
-                                    Lagos, Nigeria
-                                </p>
-                                <p>
-                                    <i class="fa fa-phone-alt me-3"></i>+234
-                                    8169129560
-                                </p>
-                                <p>
-                                    <i class="fa fa-envelope me-3"></i
-                                    >edoziemagdalene@gmail.com
-                                </p>
-                            </div>
-
-                            <div class="d-flex pt-2 gap-3">
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-facebook-f"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-instagram"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-linkedin-in"></i
-                                ></a>
-                            </div>
+            class="container-fluid bg-primary text-light footer wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-12 col-lg-12">
+                        <h4 class="text-white mb-4">Address</h4>
+                        <div class="d-flex gap-4">
+                            <p>
+                                <i class="fa fa-map-marker-alt me-3"></i>
+                                Lagos, Nigeria
+                            </p>
+                            <p>
+                                <i class="fa fa-phone-alt me-3"></i>+234
+                                818-068-3061
+                            </p>
+                            <p>
+                                <i class="fa fa-envelope me-3"></i
+                                >tomijkolawole@gmail.com
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div class="container px-lg-5">
-                    <div class="copyright">
-                        <div class="row">
-                            <div
-                                class="col-md-6 text-center text-md-start mb-3 mb-md-0"
-                            >
-                                &copy;
-                                <a class="border-bottom" href="#"
-                                    >Hertechtrail cohort 7 project.</a
-                                >
 
-                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                                Designed By
-                                <a
-                                    class="border-bottom"
-                                    href="https://htmlcodex.com"
-                                    >Maggy.</a
-                                >
-                            </div>
-                            <div class="col-md-6 text-center text-md-end">
-                                <div class="footer-menu">
-                                    <a href="">Home</a>
-                                </div>
-                            </div>
+                        <div class="d-flex pt-2 gap-3">
+                            <a
+                                class="btn btn-outline-light btn-social"
+                                href="https://www.twitter.com/tomithediamond"
+                                ><i class="fab fa-twitter"></i>
+                            </a>
+                            <a
+                                class="btn btn-outline-light btn-social"
+                                href="https://github.com/tomithediamond"
+                                ><i class="fab fa-github"></i>
+                            </a>
+                            <a
+                                class="btn btn-outline-light btn-social"
+                                href="https://www.instagram.com/tomithediamond"
+                                ><i class="fab fa-instagram"></i>
+                            </a>
+                            <a
+                                class="btn btn-outline-light btn-social"
+                                href="https://www.linkedin.com/in/o-j-kolawole/"
+                                ><i class="fab fa-linkedin-in"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Footer End -->
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div
+                            class="col-md-6 text-center text-md-start mb-3 mb-md-0"
+                        >
+                            &copy;
+                            <a class="border-bottom" href="#"
+                                >Hertechtrail cohort 7 project.</a
+                            >
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By
+                            <a
+                                class="border-bottom"
+                                href=""
+                                >Tomi.</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
             <!-- Back to Top -->
             <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"

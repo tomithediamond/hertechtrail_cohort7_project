@@ -101,3 +101,29 @@
     
 })(jQuery);
 
+// Contact Form
+
+function sendMessage(e) {
+    e.preventDefault()
+	const token = encodeURIComponent("wdqwjvn0yu9oq3k02j7x7uyd")
+	const req = new XMLHttpRequest();
+	let name = document.getElementById("name").value;
+	let email = document.getElementById("email").value;
+	let subject = encodeURIComponent(document.getElementById("subject").value);
+	let message = document.getElementById("message").value;
+
+	let body = encodeURIComponent(
+		`Name: ${name}\r\nEmail: ${email}\r\n\r\n${message}`
+	);
+	let params = `access_token=${token}&subject=${subject}&text=${body}`;
+
+	req.open("POST", "https://postmail.invotes.com/send");
+	req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	req.send(params);
+
+	document.getElementById("name").value = ''
+	document.getElementById("email").value = ''
+	document.getElementById("subject").value = ''
+	document.getElementById("message").value = ''
+}
+

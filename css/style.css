@@ -6,11 +6,9 @@
     --dark: green;
 }
 body{
-    /*background-image: url(../img/bg-img.png);*/
-    background-color: peachpuff;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(83, 26, 26);
 }
+
 
 /*** Spinner ***/
 #spinner {
@@ -316,11 +314,40 @@ h6,
 /*** Feature ***/
 .feature-item {
     transition: 0.5s;
+    overflow: hidden;
 }
 
 .feature-item:hover {
-    margin-top: -15px;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+    transform: translateY(-30px);
+}
+
+.feature-item img{
+    position: relative;
+    transition: .5s;
+}
+
+.feature-item:hover img{
+    opacity: .2;
+}
+
+.feature-item .overlay-bg{
+    position: absolute;
+    display: inline;
+    transition: 0.5s;
+    top: 0;
+    bottom: -40px;
+    left: 0;
+    box-sizing: border-box;
+    transition: .5s;
+    opacity: 0;
+    width: 100%;
+}
+
+.feature-item:hover .overlay-bg{
+    display: block;
+    bottom: 0;
+    opacity: 1;
 }
 
 /*** Pricing ***/
