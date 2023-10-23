@@ -113,9 +113,9 @@ function sendMessage(e) {
 	let message = document.getElementById("message").value;
 
 	let body = encodeURIComponent(
-		`Name: ${name}\r\nEmail: ${email}\r\n\r\n${message}`
+		`Name: ${name}\r\nEmail: ${email}\r\n\r\n${"message"}`
 	);
-	let params = `access_token=${token}&subject=${subject}&text=${body}`;
+	let params = `access_token=${token}&subject=${subject}"&"text=${body}`;
 
 	req.open("POST", "https://postmail.invotes.com/send");
 	req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");

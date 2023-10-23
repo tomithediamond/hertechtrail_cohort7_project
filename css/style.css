@@ -5,8 +5,14 @@
     --light: gray;
     --dark: green;
 }
+
+html, body {
+    overflow-x: hidden;
+}
+
 body{
     background-color: rgb(83, 26, 26);
+    position: relative;
 }
 
 
@@ -263,6 +269,10 @@ h6,
     .navbar-light .navbar-brand img {
         max-height: 45px;
     }
+
+    .nav-button {
+        float: right;
+    }
 }
 
 @media (min-width: 992px) {
@@ -313,11 +323,11 @@ h6,
 
 /*** Feature ***/
 .feature-item {
-    transition: 0.5s;
+    width: 100%;
     overflow: hidden;
 }
 
-.feature-item:hover {
+/*.feature-item:hover {
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
     transform: translateY(-30px);
 }
@@ -329,25 +339,32 @@ h6,
 
 .feature-item:hover img{
     opacity: .2;
-}
+}*/
 
 .feature-item .overlay-bg{
-    position: absolute;
-    display: inline;
-    transition: 0.5s;
+    background: peachpuff;
+    transition: all 0.3s ease-out;
+    text-align: center;
     top: 0;
     bottom: -40px;
     left: 0;
-    box-sizing: border-box;
-    transition: .5s;
+    right: 0;
     opacity: 0;
     width: 100%;
+    height: 100%;
 }
 
 .feature-item:hover .overlay-bg{
-    display: block;
-    bottom: 0;
     opacity: 1;
+}
+
+.cover-details {
+    transition: all 0.2s ease-out;
+    transform: translateZ(-100%);
+}
+
+.feature-item:hover .cover-details {
+	transform: translateZ(0);
 }
 
 /*** Pricing ***/
