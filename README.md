@@ -1,5 +1,5 @@
 *** PROJECT TITLE: PERSONAL PORTFOLIO WEBSITE
-This is my Captstone project at Hertectrail Academy Web Development (Starter) track Cohort 7.The website showcases my background and projects as a web developer.
+This is my portfolio website Captstone project at Hertectrail Academy Web Development (Starter) track Cohort 7.The website showcases my background and projects as a web developer.
 
 ==================================================================================================
 CONTENTS
@@ -23,3 +23,9 @@ PROCEDURE
 
 1. Forking
 The source repository was forked from PrincessMaggy/hertechtrail_cohort7_project, and then cloned into a new repository in my account using the command: git clone https://github.com/tomithediamond /hertechtrail_cohort7_project.git
+
+2. Building
+HTML, CSS, Bootstrap and JavaScript were used as building blocks for structure, style, interactivesness and functionality of this project. The work was carried out on VSCode and a live server was used to monitor progress.
+
+3. Deployment
+The website, upon completion, was deployed to Github pages. Subsequent changes are pushed to the master branch and updated on the deployed site. To view the deployed page, visit https://tomithediamond.github.io/hertechtrail_cohort7_project/?authuser=2
