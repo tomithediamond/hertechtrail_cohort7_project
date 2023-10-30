@@ -231,6 +231,9 @@ h6,
 }
 
 @media (max-width: 991.98px) {
+    .navbar.navbar-expand-lg.navbar-light {
+        background: #ffffff;
+    }
     .sticky-top.navbar-light {
         position: relative;
         background: #ffffff;
@@ -272,7 +275,8 @@ h6,
     }
 
     .nav-button {
-        float: right;
+        float: left;
+        margin-top: 10%;
     }
 }
 
